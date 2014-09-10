@@ -303,7 +303,7 @@ void InvertedIndex::calIDF()
 
 //用来测试倒排索引
 
-for(map<string, map<int, double> >::iterator p1 = invertedIndex_.begin();
+/*for(map<string, map<int, double> >::iterator p1 = invertedIndex_.begin();
     p1 != invertedIndex_.end(); ++p1)
     {
         cout << "words " << p1->first ;
@@ -315,8 +315,16 @@ for(map<string, map<int, double> >::iterator p1 = invertedIndex_.begin();
         }
         cout << endl;
 
-    }
+    }*/
 
+}
+map<string, map<int, double> > &InvertedIndex::getIndex()
+{
+    return invertedIndex_;
+}
+std::vector<std::string> &InvertedIndex::getdoclib()
+{
+    return doclib_;
 }
 
 InvertedIndex::~InvertedIndex()
