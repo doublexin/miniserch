@@ -327,6 +327,11 @@ std::vector<std::string> &InvertedIndex::getdoclib()
     return doclib_;
 }
 
+std::vector<offset> &InvertedIndex::getdocoffset()
+{
+   return docoffset_; 
+}
+
 InvertedIndex::~InvertedIndex()
 {
 }

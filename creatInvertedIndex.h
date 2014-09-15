@@ -30,6 +30,7 @@ class InvertedIndex
         void calIDF();
         std::map<std::string, std::map<int, double> > &getIndex();
         std::vector<std::string> &getdoclib();
+        std::vector<offset> &getdocoffset();
     private :
         int docCont_;//用于记录一共有多少篇文档
         creatStopDict &StopDict_;
